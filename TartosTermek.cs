@@ -13,7 +13,7 @@ namespace RaktarApp
         {
             GaranciaEvek = garanciaevek;
 
-        }
+        } 
         public override int ErtekSzamitas(int darabszam)
         {
             return base.ErtekSzamitas(darabszam) + (GaranciaEvek * 500 * darabszam);

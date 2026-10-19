@@ -33,7 +33,7 @@ namespace RaktarApp
             Cikkszam = becikkszam;
             Alapar = bealapar;
             osszesTermekSzama++;
-        }
+        } 
 
         public virtual int ErtekSzamitas(int darabszam)
         {

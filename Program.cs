@@ -45,4 +45,4 @@ foreach(Termek termek in Termekek)
     Console.WriteLine(termek);
 }
 Console.WriteLine();
-int teljesertek = Termekek.Sum(t => t.ErtekSzamitas(10));
+int teljesertek = Termekek.Sum(t => t.ErtekSzamitas(10)); 

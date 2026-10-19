@@ -28,9 +28,9 @@ namespace RaktarApp
         {
             get { return osszesTermekSzama; }
         }
-        public Termek (string becikszam, int bealapar)
+        public Termek (string becikkszam, int bealapar)
         {
-            Cikkszam = becikszam;
+            Cikkszam = becikkszam;
             Alapar = bealapar;
             osszesTermekSzama++;
         }

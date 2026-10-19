@@ -4,7 +4,44 @@ using System.Text;
 
 namespace RaktarApp
 {
-    internal class Termek
+    public class Termek
     {
+        public string Cikkszam { get; set; }
+        protected int alapar;
+        public int Alapar
+        {
+            get { return alapar; }
+            set
+            {
+                if (value <= 0)
+                {
+                    alapar = 1000;
+                }
+                else
+                {
+                    alapar = value;
+                }
+            }
+        }
+        private static int osszesTermekSzama;
+        public static int OsszesTermekSzama
+        {
+            get { return osszesTermekSzama; }
+        }
+        public Termek (string becikszam, int bealapar)
+        {
+            Cikkszam = becikszam;
+            Alapar = bealapar;
+            osszesTermekSzama++;
+        }
+
+        public virtual int ErtekSzamitas(int darabszam)
+        {
+            return Alapar * darabszam;
+        }
+        public override string ToString()
+        {
+            return $"Termék {Cikkszam} | Egységár: {Alapar} Ft";
+        }
     }
 }
